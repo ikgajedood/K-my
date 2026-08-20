@@ -1,0 +1,150 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("logo/image-removebg-preview.png");
+    background-size: 36vw;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#logo {
+    width: auto;
+    height: 25vh; 
+    margin: 0 auto;   
+    text-align: center;
+    display: block;    
+}
+
+#boutonpage1
+{
+  width: 40vw;
+ height: 20vh;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 5vw;
+  color: #ffffff;
+  border: 7px solid #ffffff;
+  border-radius: 12px;
+  padding: 12px 10px;
+  display: inline-block;
+  background-image: url("logo/logo presentation.png");
+    background-size: 35vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.btn{
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.btn:active{
+    transform: scale(0.85);
+}
+
+#boutonpage2
+{
+  width: 40vw;
+ height: 20vh;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 5vw;
+  color: #ffffff;
+  border: 7px solid #ffffff;
+  border-radius: 12px;
+  padding: 12px 10px;
+  display: inline-block;
+  background-image: url("logo/contact.png");
+    background-size: 35vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+  float: right;
+}
+
+#boutonpage3
+{
+  width: 45vw;
+ height: 20vh;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px auto;
+  margin-top: 0px;
+  color: #ffffff;
+  border: 7px solid #ffffff;
+  border-radius: 12px;
+  padding: 12px 10px;
+  display: block;
+  background-image: url("logo/galerierose.png");
+    background-size: 45vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+        animation: neon 3s infinite;
+  clear: both;
+}
+
+@keyframes neon {
+    0%, 100% {
+        box-shadow : 
+    0 0 10px rgba(206, 0, 195, 0.9),
+    0 0 20px rgba(195, 0, 221, 0.7),
+    0 0 30px rgba(139, 0, 139, 0.5),
+    0 0 40px rgba(0, 40, 0, 0.3);
+    }
+    50% {
+        box-shadow : 
+    0 0 20px rgb(255, 0, 157),
+    0 0 30px rgba(155, 0, 175, 0.8),
+    0 0 40px rgba(107, 0, 121, 0.6),
+    0 0 50px rgba(0, 60, 0, 0.4);
+    }
+}
+
+.signature{
+    text-align:center;
+    margin-top:10px;
+    font-size:11px;
+    opacity:0.45;
+    letter-spacing:3px;
+    transition:0.35s;
+    color:white;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.signature:hover{
+    opacity:0.9;
+    letter-spacing:5px;
+    font-size:12px;
+}
+
+.content{
+    flex: 1;
+}
